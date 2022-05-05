@@ -2,14 +2,10 @@
 
 database name = secured-db
 
-*
-
 Admin login credentials
 =======================
 Email = admin@exewebapp.com
 Password = P@ssw0rd
-
-*
 
 Query for new subscriber
 ========================
