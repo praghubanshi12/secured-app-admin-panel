@@ -1,0 +1,35 @@
+<app-home>
+  <h5>Approval Status</h5>
+  <input
+    type="radio"
+    id="pending"
+    name="subscriberType"
+    checked
+    (change)="onSubscriberTypeChange($event)"
+  />
+  <label for="pending">Pending</label>
+
+  <input
+    type="radio"
+    id="approved"
+    name="subscriberType"
+    (change)="onSubscriberTypeChange($event)"
+  />
+  <label for="approved">Approved</label>
+
+  <input
+    type="radio"
+    id="disapproved"
+    name="subscriberType"
+    (change)="onSubscriberTypeChange($event)"
+  />
+  <label for="disapproved">Dispproved</label>
+
+  <app-table
+    [tableHeaders]="tableHeaders"
+    [tableData]="tableData"
+    [paginationConfig]="paginationConfig"
+    tableTitle="Subscriber"
+    [modalFormElements]="modalFormElements"
+  ></app-table>
+</app-home>
